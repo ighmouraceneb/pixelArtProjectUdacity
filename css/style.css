@@ -3,31 +3,60 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+
 body {
-    text-align: center
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
+
 .container {
     width: 80rem;
     margin: 0 auto;
    
 }
-.container .grid-size-form, .container .colorPicker, .container .designCanvas {
-    background-color: #d6d5d529;
+
+
+.container .grid-size-form,
+.container .colorPicker,
+.container .table-canvas .designCanvas {
+    background-color: rgba(242, 242, 242, 1);
     width: 40rem;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.5rem;
 }
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding:16px;
+  font-weight:lighter;
+  -moz-box-shadow: 2px 2px 6px #888;  
+  -webkit-box-shadow: 2px 2px 6px #888;  
+  box-shadow:2px 2px 6px #888;  
+  text-align:center;
+  display:block;
+  margin:16px;
+}
+/**************************************************
+                    GRID SIZE
+**************************************************/
 .container .grid-size-form {
     overflow: hidden;
 }
+
+
 .container .grid-size-form .column {
-    width: 50%;
+    width: 36%;
     float: left;
     position: relative;
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
 }
+
+
 .container .grid-size-form .column .input-block {
     background-color: #d6d5d5;
     border: solid 1px #d6d5d5;
@@ -35,10 +64,15 @@ body {
     padding: .8rem;
     margin-bottom: .8rem;
 }
+
+
 .focus {
     background-color: #fff!important;
     border: solid 1px darken( #d6d5d5, 10%)!important;
+    
 }
+
+
 .container .grid-size-form .column .input-block label {
     position: absolute;
     left: 25px;
@@ -51,11 +85,16 @@ body {
     font-size: 14px;
     line-height: 10px
 }
+
+
 .container .grid-size-form .column .input-block label:focus {
     top: 0;
 }
+
+
 .grid-size-form .column .input-block input {
     position: relative;
+    width: 100%;
     top: .7rem;
     right: 0.7rem;
     background-color: transparent;
@@ -69,8 +108,11 @@ body {
     font-size: 18px;
     color: #333;
 }
+
+
+
 .grid-size-form input[type="submit"] {
-    width: 100%;
+    width: 10rem;
     background-color: #d6d5d5;
     color: #000;
     font-size: 12px;
@@ -80,13 +122,26 @@ body {
     border-radius: 2px;
     transition: all 0.3s ease;
     margin-bottom: 20px;
-    height: 60px;
+    height: 3rem;
     border: none;
     cursor: pointer;
 }
+
+.grid-size-form input[type="submit"]:hover {
+    background-color: transparent;
+    border: 0.2rem solid #d6d5d5;
+}
+
+
+
+/**************************************************
+                    PICK A COLOR
+**************************************************/
 .container .colorPicker {
     margin: 1rem auto;
 }
+
+
 .container .colorPicker .color-btn {
     background: linear-gradient(160deg, #02ccba, #aa7ecd);
     width: 10rem;
@@ -94,6 +149,40 @@ body {
     margin: 0 auto;
     cursor: pointer;
 }
+
+
 .container .colorPicker input {
     display: none;
+}
+
+
+/**************************************************
+                    DESIGN CANVAS
+**************************************************/
+.container .table-canvas {
+   
+}
+
+
+.container .table-canvas table,
+.container .table-canvas tr,
+.container .table-canvas td {
+    border: 1px solid black;
+}
+
+
+.container .table-canvas table {
+    border-collapse: collapse;
+    
+    margin: 2rem auto;
+}
+
+
+.container .table-canvas tr {
+   height: 20px;
+}
+
+
+.container .table-canvas td {
+    width: 20px;
 }

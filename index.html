@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="a one-page web application that allows users to draw pixel images on a customizable canvas!" content="">
     <meta name="Bilal" content="">
@@ -32,20 +33,23 @@
                     </div>
                 </div>
                 <div class="btn">
-                    <input type="submit">
+                    <input type="submit" id="sizePicker">
                 </div>
             </form>
         </div>
 
         <div class="colorPicker">
             <h2>Pick A Color</h2>
-            <div class="color-btn"></div>
-            <input type="color" id="colorPicker" pattern="#[a-f0-9]{6}" title="hexadecimal color" placeholder="#000000">
+            <div class="color-btn" id="color-btn"></div>
+            <input type="color" id="colorPicker" title="hexadecimal color" placeholder="#000000">
         </div>
-
-        <div class="designCanvas">
-            <h2>Design Canvas</h2>
-            <table id="pixel_canvas"></table>
+        <div class="table-canvas">
+            <div class="designCanvas">
+                <h2>Design Canvas</h2>
+            </div>
+            <div class="table">
+                <table id="pixel_canvas"></table>
+            </div>
         </div>
     </div>
 

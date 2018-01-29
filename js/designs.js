@@ -41,18 +41,18 @@ $('.grid-size').find('.form').blur(function() {
 * @trigger a click on the input of type color which has a
 * colorPicker id (input is not visible) when we click on the element * that has the class color-btn
 */
-
+const COLORPICKER = $("#colorPicker");
 $("#color-btn").on('click',function(e){
     
-     $("#colorPicker").click();
+     COLORPICKER.click();
     
 });
 
 /**
 * @retrieve the value of the color input that has the colorPicker id * in case of change and apply it to the background of the element * that has the class color-btn
 */
-$("#colorPicker").change(function(e){
-    var color = $("#colorPicker").val();
+COLORPICKER.change(function(e){
+    var color = COLORPICKER.val();
      $(".color-btn").css('background', color);
 });
 
@@ -61,7 +61,7 @@ $("#colorPicker").change(function(e){
 const TABLE_CANVAS = $("#pixel_canvas");
 const TABLE_HEIGHT = $("#input-height");
 const TABLE_WIDTH = $("#input-width");
-const TABLE_CASE_COLOR = $("#colorPicker");
+const TABLE_CASE_COLOR = COLORPICKER;
      
 /**
 * @description retrieve the values of height and width and call the * makeGride () and colorCellClick () functions, if a grid already
@@ -110,4 +110,5 @@ function colorCellClick() {
 }
   
 }); 
-
+/*Enregistrer le dessin en tant qu'image (ou imprimer en PDF) :trophée:
+Sérialiser le canevas en tant que fichier texte HTML à importer / exporter*/

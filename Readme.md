@@ -1,8 +1,6 @@
 # Pixel Art Maker Project
 
-The Pixel Art Maker Project is a part of the Udacity Front End Nanodegree Program.
-The project aims at building an awesome grid where a user can select and color various cells of the grid.
-The size of the grid can be selected and each cell can have different color !!
+Le projet Pixel Art Make vise à créer une grille  dans laquelle un utilisateur peut sélectionner et colorer différentes cellules de la grille. La taille de la grille peut être sélectionnée et chaque cellule peut avoir une couleur différente !!
 
 # Lien vers le projet
 
